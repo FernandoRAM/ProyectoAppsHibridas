@@ -62,7 +62,7 @@ function crearContactos(){
 				div = "<div class='contacto oculto' "+
 				"onclick='verContacto(this.id)' id='"+contacto[i].id+"'>"+
 				"<div class='contacto-nombre'>"+contacto[i].nombre+"</div>"+
-				"<div class='contacto-estado'>"+contacto[i].rate+"</div>"+
+				"<div class='contacto-estado'>"+"------>"+"</div>"+
 				"</div>";
 				document.querySelector('section').innerHTML += div;
 			}
