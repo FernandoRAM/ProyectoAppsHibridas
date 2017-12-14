@@ -187,7 +187,7 @@ function cargarFoto(){
 			if (foto.length>0) {
 					for(i=0; i<foto.length; i++){
 
-									div = "<img src="+foto[i].direccion+">";
+									div = "<img src=https://torrewz.000webhostapp.com/PROYECTO2/"+foto[i].direccion+">";
 									document.querySelector('article').innerHTML += div;
 									
 								}
