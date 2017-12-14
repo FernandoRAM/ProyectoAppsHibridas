@@ -147,7 +147,7 @@ function registrar(){
 
 function set(){
 	id = localStorage.getItem('idUsuario');
-	document.getElementById('up').setAttribute("action","php/upload.php/?&id="+id)
+	document.getElementById('up').setAttribute("action","https://torrewz.000webhostapp.com/PROYECTO2/php/upload.php/?&id="+id)
 }
 
 function foto(){
