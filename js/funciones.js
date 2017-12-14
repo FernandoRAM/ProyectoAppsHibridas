@@ -189,6 +189,7 @@ function cargarFoto(){
 
 									div = "<img src=https://torrewz.000webhostapp.com/PROYECTO2/"+foto[i].direccion+">";
 									document.querySelector('article').innerHTML += div;
+									cargarDatos();
 									
 								}
 
@@ -197,6 +198,7 @@ function cargarFoto(){
 
 				div = "<img src='img/default.png'>";
 									document.querySelector('article').innerHTML += div;
+									cargarDatos();
 
 
 			}
