@@ -47,6 +47,20 @@ function cerrarSesion(){
 	window.location.assign('login.html')
 }
 
+function cargarPuntos(id){
+	contactosAjax = new XMLHttpRequest();
+	contactosAjax.open('GET','https://torrewz.000webhostapp.com/PROYECTO2/php/puntos.php?id='+id);
+	contactosAjax.send();
+	contactosAjax.onreadystatechange = function(){
+		if (contactosAjax.readyState == 4 && contactosAjax.status == 200){
+			contacto = JSON.parse(contactosAjax.responseText);
+			console.log(contacto)
+		for(i=0; i<contacto.length; i++){
+
+			return contacto['rate'];
+		}
+	}
+}
 
 function crearContactos(){
 	
@@ -59,10 +73,11 @@ function crearContactos(){
 			console.log(contacto)
 		for(i=0; i<contacto.length; i++){
 			if (contacto[i].id != localStorage.getItem('idUsuario')) {
+				puntos = cargarPuntos(contacto[i].id);
 				div = "<div class='contacto oculto' "+
 				"onclick='verContacto(this.id)' id='"+contacto[i].id+"'>"+
 				"<div class='contacto-nombre'>"+contacto[i].nombre+"</div>"+
-				"<div class='contacto-estado'>"+contacto[i].rate+"</div>"+
+				"<div class='contacto-estado'>"+puntos+"</div>"+
 				"</div>";
 				document.querySelector('section').innerHTML += div;
 			}
@@ -259,3 +274,4 @@ function score(){
 	}
 
 }
+
