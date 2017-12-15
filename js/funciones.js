@@ -51,7 +51,7 @@ function cerrarSesion(){
 function crearContactos(){
 	
 	contactosAjax = new XMLHttpRequest();
-	contactosAjax.open('GET','https://torrewz.000webhostapp.com/PROYECTO2/php/contactos.php');
+	contactosAjax.open('GET','http://192.168.1.77:88/PROYECTO2/php/contactos.php');
 	contactosAjax.send();
 	contactosAjax.onreadystatechange = function(){
 		if (contactosAjax.readyState == 4 && contactosAjax.status == 200){
@@ -62,7 +62,7 @@ function crearContactos(){
 				div = "<div class='contacto oculto' "+
 				"onclick='verContacto(this.id)' id='"+contacto[i].id+"'>"+
 				"<div class='contacto-nombre'>"+contacto[i].nombre+"</div>"+
-				"<div class='contacto-estado'>"+"------>"+"</div>"+
+				"<i class='fa fa-user-circle-o contacto-estado'></i>"+
 				"</div>";
 				document.querySelector('section').innerHTML += div;
 			}
