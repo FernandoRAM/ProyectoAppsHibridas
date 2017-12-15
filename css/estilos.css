@@ -345,3 +345,15 @@ label.star:before {
 	font-size: 70px;
 
 }
+.otro{
+	width: 100%;
+		height: 100%;
+		float: left;
+		background: var(--color-principal);
+		padding-top: 230px;
+}
+#fileToUpload{
+	background: none !important;
+	border: none;
+
+}
