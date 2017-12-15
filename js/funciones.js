@@ -136,7 +136,14 @@ function registrar(){
 			logAjax.onreadystatechange = function(){
 				if (logAjax.readyState==4 && logAjax.status == 200) {
 					if (logAjax.responseText!="0") {
-						window.location.assign('login.html');
+						showSnackbar('Registrado con exito',1500);
+						setTimeout(function(){ 
+    						showSnackbar('Se redirige a Login',1000);
+						}, 1550);
+						setTimeout(function(){ 
+    						window.location.assign('login.html');
+						}, 3100);
+						
 					}else{
 
 					}
@@ -260,4 +267,18 @@ function score(){
 		}
 	}
 
+}
+
+function showSnackbar(text, time) {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar")
+
+    // Add the "show" class to DIV
+    x.className = "show";
+    x.innerHTML = text;
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ 
+    	x.className = x.className.replace("show", ""); 
+	}, time);
 }

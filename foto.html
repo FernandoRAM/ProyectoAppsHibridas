@@ -19,9 +19,9 @@
 	<form id="up" method="post" enctype="multipart/form-data">
     
     <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
+    <input onclick="showSnackbar('Cargando Foto',3000)" type="submit" value="Cargar imagen" name="submit">
 </form>
-	
+	<div id="snackbar">Some text some message..</div>
 	</div>
 
 <script>
