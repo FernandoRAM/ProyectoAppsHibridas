@@ -51,7 +51,7 @@ function cerrarSesion(){
 function crearContactos(){
 	
 	contactosAjax = new XMLHttpRequest();
-	contactosAjax.open('GET','http://192.168.1.77:88/PROYECTO2/php/contactos.php');
+	contactosAjax.open('GET','https://torrewz.000webhostapp.com/PROYECTO2/php/contactos.php');
 	contactosAjax.send();
 	contactosAjax.onreadystatechange = function(){
 		if (contactosAjax.readyState == 4 && contactosAjax.status == 200){
