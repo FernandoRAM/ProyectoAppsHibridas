@@ -1,9 +1,10 @@
 *{
 	margin:0;
 	padding: 0;
+	font-family: 'Lato', sans-serif;
 }
 :root{
-	--color-principal: #FF8F00; 
+	--color-principal: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);; 
 	--color-contraste: white;
 	--color-fondo: #DDE3E6;
 	--color-diferente: linear-gradient(to right, #136a8a, #267871);
@@ -61,8 +62,24 @@ body,html{
 		height: 40px;
 		margin-top: 40px;
 		font-size: 1em;
+		background: rgba(0,0,0,0.1);
 		color: white;
-		outline: none;
+		border-color: rgba(0,0,0,0.5);
+	}
+	#botonL{
+		background: rgba(247, 222, 131,1);
+		color: black;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	label{
+		width: 50%;
+		margin-left: 25%;
+		float: left;
+		height: auto;
+		font-size: 1.1em;
+		color: black;
+		font-weight: bold;
 	}
 	input{
 		width: 50%;
@@ -72,10 +89,11 @@ body,html{
 		border: 2px solid white;
 		border-radius: 20px;
 		height: 40px;
-		margin-top: 40px;
 		font-size: 1em;
+		margin-bottom: 30px;
+		background: rgba(0,0,0,0.1);
 		color: white;
-		outline: none;
+		border-color: rgba(0,0,0,0.5);
 	}
 
 nav{
