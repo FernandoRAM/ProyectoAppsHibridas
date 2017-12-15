@@ -275,18 +275,18 @@ footer{
 }
 div.stars {
   width: 100%;
-  display:inline-block;
+  text-align: center;
   top: 70%;
   position: absolute;
 
-    right: calc(100% - 83%);
   
 }
 
 input.star { display: none; }
 
 label.star {
-  float: right;
+	/*float: right;*/
+  display: inline;
   padding: 10px;
   margin: auto;
   font-size: 36px;
