@@ -26,7 +26,7 @@ p{
 }
 body,html{
 	
-	height: 100%;
+	height: auto;
 }
 	.login{
 		width: 100%;

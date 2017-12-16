@@ -86,12 +86,12 @@ function animacionContactos(){
 
 function verContacto(id){
 
-	localStorage.setItem('idRate', id)
-	window.location.assign('usuario.html')
+	localStorage.setItem('idRate', id);
+	window.location.assign('usuario.html');
 }
 
 function regresar(){
-	window.location.assign('index.html')
+	window.location.assign('index.html');
 }
 function cargarUsuario(){
 	idUser = localStorage.getItem('idRate');
