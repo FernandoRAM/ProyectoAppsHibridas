@@ -271,8 +271,8 @@ footer{
 	line-height: 40px;
 }
 #contenedor>img{
-	max-height: 300px;
-	max-width: 300px;
+	max-height: 180px;
+	max-width: 180px;
 	display: block;
 	margin:0 auto 0 auto;
 }
